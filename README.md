@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/Laura-BugFree/blog-preview-card-main.git)
-- Live Site URL: [Blog Card]()
+- Solution URL: [Github](https://github.com/Laura-BugFree/blog-preview-card.git)
+- Live Site URL: [Blog Card](https://laura-bugfree.github.io/blog-preview-card/)
 
 ## My process
 
