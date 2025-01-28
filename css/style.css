@@ -58,7 +58,7 @@ body {
     margin-inline: auto;  
     
     @media (width > 375px) {
-        max-inline-size: 384px;
+        max-inline-size: 24rem;
 
     }
 }
