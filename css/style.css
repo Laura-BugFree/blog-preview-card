@@ -1,0 +1,134 @@
+:root {
+    /* Colors */
+    --card-bg-clr:  hsl(0, 0%, 100%);
+    --accent-clr:   hsl(47, 88%, 63%);
+    --bold-clr:     hsl(0, 0%, 7%); 
+    --body-clr:     hsl(0, 0%, 42%);
+    
+    /* Typography */
+    /* Font-Family */
+    --ff-ss:  "Figtree", serif;
+
+    /* Font-Weight */
+    --fw-med:   500;
+    --fw-xbold: 800;
+
+    /* Font-Size */
+    --fs-body:  1rem;
+    --fs-sml:   .875rem;
+    --fs-1:     1.5rem;
+}
+
+*,*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--accent-clr);
+    color: var(--bold-clr);
+    font-family: var(--ff-ss);
+    font-size: var(--fs-sml);
+    font-weight: var(--fw-med);
+    line-height: 1.5;
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+}
+
+.xb-text {
+    font-weight: var(--fw-xbold);
+}
+
+.blog-desciption {
+    color: var(--body-clr);
+    font-size: var(--fs-body);
+}
+
+.blog-card-wrapper {
+    background-color: var(--card-bg-clr);
+    border: 1px solid var(--bold-clr);
+    box-shadow: .75em .675em;
+    max-inline-size: 90%;
+    padding: 1.5em; 
+    margin-inline: auto;  
+    
+    @media (width > 375px) {
+        max-inline-size: 384px;
+
+    }
+}
+
+.blog-card-wrapper,
+.card-img {
+    border-radius: 1.5em;
+}
+
+.card-title-link  {
+    color: inherit;
+    font-size: var(--fs-1);
+    text-decoration: none;
+}
+
+.card-title-link:hover,
+.card-title-link:focus-visible {
+    color: var(--accent-clr);
+}
+
+.card-info span {
+    background-color: var(--accent-clr);
+    padding: .5em 1em;
+    border-radius: .5em;
+}
+
+.publish-info {
+    margin-block-start: 1.5em;
+}
+
+.profile-img {
+    max-width: 32px;
+}
+
+.flex {
+    display: flex;    
+}
+
+.flex-layout {
+    flex-direction: column;
+    gap: 24px;
+}
+
+.flex-order-2 {
+    order: -2;
+}
+
+.flex-order-1 {
+    order: -1;
+}
+
+.card-user-info {
+    gap: .75em;
+    align-items: center;
+}
+
+
+/* ===== Attribution ===== */
+
+.attribution {    
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 63%, 42%);
+    text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus-visible {
+    color: var(--bold-clr);
+    text-decoration: underline;
+}
